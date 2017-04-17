@@ -256,9 +256,9 @@ The same data is graphically visualized here.
 
 The following set of images visualizes the output of the RELU activation of the first convolutional layer.
 
-For the most part the 16 filters in the first layers seem to be learning similar information. However some filters (denoted FeatureMap<n> in the images) seem to be learning specific features.
+For the most part the 16 filters in the first layer seem to be learning similar information. However some filters (denoted FeatureMap<n> in the images) seem to be learning specific features.
 
-For example FeatureMap 12 and FeatureMap 13 are detecting diagnoal lines in opposite directions. FeatureMap 7 seems to be laerning the brightness level.
+For example FeatureMap 12 and FeatureMap 13 are detecting diagnoal lines in opposite directions. FeatureMap 7 seems to be learning the brightness level.
 
 
 web image 1
