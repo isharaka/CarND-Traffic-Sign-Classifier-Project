@@ -11,6 +11,11 @@
 [image6]: ./web/web3.jpeg "Traffic Sign 3"
 [image7]: ./web/web4.jpeg "Traffic Sign 4"
 [image8]: ./web/web5.jpeg "Traffic Sign 5"
+[image9]: ./images/featuremap_visualization1.png "Featuremaps 1"
+[image10]: ./images/featuremap_visualization2.png "Featuremaps 2"
+[image11]: ./images/featuremap_visualization3.png "Featuremaps 3"
+[image12]: ./images/featuremap_visualization4.png "Featuremaps 4"
+[image13]: ./images/featuremap_visualization5.png "Featuremaps 5"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -120,7 +125,7 @@ My final model results were:
 
 During the lab project LeNet achived lose to 96% accuracy in classifying somewhat similar (similar in size of the input images and general shape of the content) MNIST dataset.
 
-*How was the architecture adjusted and why was it adjusted? *
+*How was the architecture adjusted and why was it adjusted?*
 
 The adjustments are summarized below.
 
@@ -161,7 +166,7 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The first, fourth and fifth images have noise (watermarks) which may cause diffculties in classfying. 
+The first, fourth and fifth images have noise (watermarks) which may cause diffculties in classifying. 
 
 Second and fifth have shapes in the background (houses). The nework has to learn to discard the background and focus on the sign.
 
@@ -246,3 +251,28 @@ Expected prediction: 14  Stop
 
 The same data is graphically visualized here.
 ![alt text][image3]
+
+### Featuremap Visualization
+
+The following set of images visualizes the output of the RELU activation of the first convolutional layer.
+
+For the most part the 16 filters in the first layers seem to be learning similar information. However some filters (denoted FeatureMap<n> in the images) seem to be learning specific features.
+
+For example FeatureMap 12 and FeatureMap 13 are detecting diagnoal lines in opposite directions. FeatureMap 7 seems to be laerning the brightness level.
+
+
+web image 1
+![alt text][image9]
+
+web image 2
+![alt text][image10]
+
+web image 3
+![alt text][image11]
+
+web image 4
+![alt text][image12]
+
+web image 5
+![alt text][image13]
+
