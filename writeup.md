@@ -196,58 +196,58 @@ Approximately 15% difference in accuracy between the test set and the images fro
 
 The code for visualizing the certainity of predictions on my final model is located in the 15th, 16th and 17th cell of the Ipython notebook.
 
-The softmax probabilities for the top 5 predictions for each image is listed below. The closeness of the softmax probabilities in the top 5 prediction for speed signs highlights the modles poor performance in classifying the speed signs. The model shows higher degree of certainity relative to other potential prediction when classifying signs that are not speed limits. 
+The softmax probabilities for the top 5 predictions for each image is listed below. The non-zero of the softmax probabilities in the second to fifth predictions for speed signs highlights the models poor performance in classifying the speed signs. The model shows higher degree of certainity relative to other potential prediction when classifying signs that are not speed limits. 
 This could be due to the insuffcicent resolution of the image for the model to identify numerals correctly.
 
 Expected prediction:  3  Speed limit (60km/h)
 
 | Prediction	  |     Softmax Prob. | Sign		| 
 |:------:|:---------------:|:---------------------------------------------:| 
-|  3   | 0.30   | Speed limit (60km/h)|
-|  2   | 0.22   | Speed limit (50km/h)|
-|  5   | 0.18   | Speed limit (80km/h)|
-|  1   | 0.17   | Speed limit (30km/h)|
-|  4   | 0.13   | Speed limit (70km/h)|
+|  3   | 0.99996   | Speed limit (60km/h)|
+|  2   | 0.00004   | Speed limit (50km/h)|
+|  5   | 0.00000  | Speed limit (80km/h)|
+|  1   | 0.00000   | Speed limit (30km/h)|
+|  4   | 0.00000   | Speed limit (70km/h)|
  
 Expected prediction: 12  Priority road
 
 | Prediction	  |     Softmax Prob. | Sign		| 
 |:------:|:---------------:|:---------------------------------------------:| 
-| 12   | 0.34   | Priority road|
-| 40   | 0.25   | Roundabout mandatory|
-| 38   | 0.16   | Keep right|
-| 15   | 0.14   | No vehicles|
-|  8   | 0.12   | Speed limit (120km/h)|
+| 12   | 1.00000   | Priority road|
+| 40   | 0.00000   | Roundabout mandatory|
+| 38   | 0.00000   | Keep right|
+| 15   | 0.00000   | No vehicles|
+|  8   | 0.00000   | Speed limit (120km/h)|
  
 Expected prediction: 11  Right-of-way at the next intersection
 
 | Prediction	  |     Softmax Prob. | Sign		| 
 |:------:|:---------------:|:---------------------------------------------:| 
-| 11   | 0.33  |  Right-of-way at the next intersection|
-| 28   | 0.22 |   Children crossing|
-| 30   | 0.18  |  Beware of ice/snow|
-| 23   | 0.14   | Slippery road|
-| 27   | 0.13   | Pedestrians|
+| 11   | 1.00000  |  Right-of-way at the next intersection|
+| 28   | 0.00000 |   Children crossing|
+| 30   | 0.00000  |  Beware of ice/snow|
+| 23   | 0.00000   | Slippery road|
+| 27   | 0.00000   | Pedestrians|
  
 Expected prediction:  2  Speed limit (50km/h)
 
 | Prediction	  |     Softmax Prob. | Sign		| 
 |:------:|:---------------:|:---------------------------------------------:| 
-|  2   | 0.28   | Speed limit (50km/h)|
-|  3   | 0.19   | Speed limit (60km/h)|
-|  5   | 0.18   | Speed limit (80km/h)|
-|  1   | 0.18   | Speed limit (30km/h)|
-|  7   | 0.17   | Speed limit (100km/h)|
+|  2   | 0.96968   | Speed limit (50km/h)|
+|  3   | 0.03031   | Speed limit (60km/h)|
+|  5   | 0.00001   | Speed limit (80km/h)|
+|  1   | 0.00000   | Speed limit (30km/h)|
+|  7   | 0.00000   | Speed limit (100km/h)|
  
 Expected prediction: 14  Stop
 
 | Prediction	  |     Softmax Prob. | Sign		| 
 |:------:|:---------------:|:---------------------------------------------:| 
-| 14   | 0.44   | Stop|
-| 38   | 0.22   | Keep right|
-| 13   | 0.14   | Yield|
-| 40   | 0.12   | Roundabout mandatory|
-| 34   | 0.07   | Turn left ahead|
+| 14   | 1.00000   | Stop|
+| 38   | 0.00000   | Keep right|
+| 13   | 0.00000   | Yield|
+| 40   | 0.00000   | Roundabout mandatory|
+| 34   | 0.00000   | Turn left ahead|
 
 The same data is graphically visualized here.
 ![alt text][image3]
