@@ -196,7 +196,7 @@ Approximately 15% difference in accuracy between the test set and the images fro
 
 The code for visualizing the certainity of predictions on my final model is located in the 15th, 16th and 17th cell of the Ipython notebook.
 
-The softmax probabilities for the top 5 predictions for each image is listed below. The non-zero of the softmax probabilities in the second to fifth predictions for speed signs highlights the models poor performance in classifying the speed signs. The model shows higher degree of certainity relative to other potential prediction when classifying signs that are not speed limits. 
+The softmax probabilities for the top 5 predictions for each image is listed below. The non-zero softmax probabilities in the second to fifth predictions for speed signs highlights the models poor performance in classifying the speed signs. The model shows higher degree of certainity relative to other potential prediction when classifying signs that are not speed limits. 
 This could be due to the insuffcicent resolution of the image for the model to identify numerals correctly.
 
 Expected prediction:  3  Speed limit (60km/h)
